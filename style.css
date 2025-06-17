@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #f0f0f0;
+  padding: 60px 20px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.project-card {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.project-card.delay {
+  animation-delay: 0.4s;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.slide-up {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+.bounce {
+  animation: bounce 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(0.9); opacity: 0; }
+  60%  { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
