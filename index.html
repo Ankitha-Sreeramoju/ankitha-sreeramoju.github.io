@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ankitha Sreeramoju | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="fade-in">
-    <h1 class="slide-up">Hello, I’m Ankitha 👋</h1>
-    <p class="fade-in-delay">Data Science | Scientific Computing | UAT Testing</p>
-  </header>
+  <div class="bg-animation"></div>
 
-  <section class="fade-in">
-    <h2>My Projects</h2>
-    <div class="project-card bounce">
-      <h3>Grocery Basket Optimizer</h3>
-      <p>Streamlit app using K-means for budget-based grocery clustering.</p>
-    </div>
-    <div class="project-card bounce delay">
-      <h3>Drug Rating Predictor</h3>
-      <p>NLP + BERT-based sentiment classifier for medical reviews.</p>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section fade-in">
+    <h1>Hello, I'm <span>Ankitha</span></h1>
+    <p>Data Scientist | Scientific Computing | UAT Testing</p>
   </section>
-   <section class="fade-in">
-  <h2>About Me</h2>
-  <p class="slide-up" style="max-width: 600px; margin: auto;">
-    I’m Ankitha Sreeramoju, a passionate Data Science graduate student from FSU with a background in Electrical & Electronics Engineering. I'm experienced in scientific computing, UAT testing, and real-world AI projects. I love solving meaningful problems with data and tech!
-  </p>
-</section>
 
-  <footer class="fade-in">
-    <p>© 2025 Ankitha Sreeramoju | Let’s connect on LinkedIn</p>
+  <section id="about" class="section slide-up">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Data Science student at FSU with experience in machine learning, scientific computing, and UAT testing. I enjoy blending creativity with analytics to solve meaningful problems.
+    </p>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-card">Grocery Basket Optimizer – Clustering & Streamlit</div>
+    <div class="project-card">Drug Rating Predictor – NLP with BERT</div>
+  </section>
+
+  <section id="contact" class="section slide-up">
+    <h2>Contact</h2>
+    <p>Email: ankitha@example.com</p>
+    <p><a href="https://www.linkedin.com/in/ankithasreeramoju/">LinkedIn</a> | <a href="https://github.com/ankitha-sreeramoju">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ankitha Sreeramoju</p>
   </footer>
 </body>
 </html>
